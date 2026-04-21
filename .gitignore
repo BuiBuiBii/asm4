@@ -8,10 +8,14 @@ server/dist/
 
 .env
 .env.*
+!.env.example
 client/.env
 client/.env.*
+!client/.env.example
+!client/.env.production
 server/.env
 server/.env.*
+!server/.env.example
 
 .DS_Store
 Thumbs.db
@@ -23,3 +27,4 @@ pnpm-debug.log*
 
 .vscode/
 .idea/
+.vercel/

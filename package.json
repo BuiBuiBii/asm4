@@ -2,12 +2,14 @@
   "name": "quiz-app-project",
   "version": "1.0.0",
   "description": "Quiz Assignment 4 workspace",
-  "main": "server/server.js",
+  "main": "server/index.js",
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "node --watch server/server.js",
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
     "server:dev": "npm --prefix server run dev",
-    "client:dev": "npm --prefix client run dev"
+    "server:start": "npm --prefix server run start",
+    "client:dev": "npm --prefix client run dev",
+    "client:build": "npm --prefix client run build"
   },
   "dependencies": {}
 }

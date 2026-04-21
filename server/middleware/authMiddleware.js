@@ -1,8 +1,9 @@
 const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 const Question = require('../models/Question');
+const env = require('../config/env');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'ass4-secret-key';
+const JWT_SECRET = env.jwtSecret;
 
 const createHttpError = (status, message, code) => {
   const err = new Error(message);

@@ -2,10 +2,13 @@
   "name": "quiz-app-server",
   "version": "1.0.0",
   "description": "Quiz Assignment 4 backend",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "engines": {
+    "node": ">=18.18.0"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
