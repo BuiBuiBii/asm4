@@ -33,11 +33,11 @@ if (nodeEnv === 'production') {
 }
 
 if (missingRequiredVars.length > 0) {
-  throw new Error(
-    `[config] Missing required environment variables: ${missingRequiredVars.join(
-      ', '
-    )}. Copy server/.env.example to server/.env and fill in the values.`
-  );
+  const message = `[config] Missing required environment variables: ${missingRequiredVars.join(
+    ', '
+  )}. Please set these environment variables in your deployment platform or create server/.env with the required values.`;
+  console.error(message);
+  throw new Error(message);
 }
 
 module.exports = Object.freeze({
